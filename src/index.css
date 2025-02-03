@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primium-border: rgb(193, 163, 98);
+    --color-black-theme:#050606;
+    --color-light-theme:#1E1F1F;
+}
