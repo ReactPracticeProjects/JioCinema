@@ -6,6 +6,8 @@ import { Link, Links } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { FaMicrophone } from "react-icons/fa";
+import BottomNavbar from "../layout/BottomNavbar";
+
 
 function Navbar() {
   const [seartchterm, setsearchterm] = useState("");
@@ -17,26 +19,27 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbarcontainer sticky top-0 left-0 bg-black-theme px-15 py-5">
+      <div className="navbarcontainer sticky top-0 left-0 bg-black-theme px-5 lg:px-15 py-5">
         <div className="navbar flex justify-between ">
           <div className="navleft flex gap-6 ">
             <div className="logos flex gap-3 items-center">
+              <Link to="/">
+                <img src={jiocinemalogo} className="hidden lg:block" alt="" />
+                <img
+                  src={mdjiocinemalogo}
+                  className="lg:hidden w-7 sm:"
+                  alt=""
+                />
+              </Link>
 
-             <Link to="/">
-             
-             <img src={jiocinemalogo} className="hidden lg:block" alt="" />
-              <img src={mdjiocinemalogo} className="lg:hidden w-7 sm:" alt="" />
-             </Link> 
-
-               <Link to="/subscription/plans">
-               <span className="flex border rounded-full py-1.5 px-2 border-2 hover:shadow-2xl shadow-primium-border border-primium-border items-center text-white">
-                <img src={crown} alt="Crown" className="w-4 h-4 mr-2" />
-                <span className="text-[10px] text-primium-border sm:text-sm font-semibold">
-                  Go Premium
+              <Link to="/subscription/plans">
+                <span className="flex border rounded-full py-1.5 px-2 border-2 hover:shadow-2xl shadow-primium-border border-primium-border items-center text-white">
+                  <img src={crown} alt="Crown" className="w-4 h-4 mr-2" />
+                  <span className="text-[10px] text-primium-border sm:text-sm font-semibold">
+                    Go Premium
+                  </span>
                 </span>
-              </span>
-               </Link>
-            
+              </Link>
             </div>
             <div className="navcenter text-[#F5F5F5]  items-center gap-5 hidden md:flex">
               <Link to="/">Home</Link>
@@ -78,8 +81,11 @@ function Navbar() {
               <FaRegUser />
             </button>
           </div>
+
+        
         </div>
       </div>
+      <BottomNavbar/>
     </>
   );
 }
