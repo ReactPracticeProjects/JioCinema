@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Slider from './Slider'
+import HorizonatalNavSlider from './common/HorizonatalNavSlider'
 
 function Header() {
   return (
@@ -8,6 +8,8 @@ function Header() {
 
     {/* Navbar */}
     <Navbar/>
+
+    <HorizonatalNavSlider/>
 
     {/* Slider */}
     {/* <Slider/> */}

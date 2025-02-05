@@ -5,3 +5,13 @@
     --color-black-theme:#050606;
     --color-light-theme:#1E1F1F;
 }
+
+#root {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+}

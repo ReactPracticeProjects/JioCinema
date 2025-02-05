@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MainSec from "../components/MainSec";
 
 function UserLayout() {
   return (
@@ -8,6 +9,8 @@ function UserLayout() {
       {/* Header Section */}
       <Header />
       {/* Main Section */}
+
+      <MainSec/>
 
       {/* Footer Section */}
       <Footer />

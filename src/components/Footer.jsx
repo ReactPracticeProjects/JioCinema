@@ -4,7 +4,7 @@ import TopFooter from "./Sections/TopFooter";
 function Footer() {
   return (
     <>
-      <div className="absolute bottom-0 left-0 w-full">
+      <div className=" w-full">
         {/* Top Footer Section */}
         <TopFooter />
         {/* Bottom Foote Section */}
